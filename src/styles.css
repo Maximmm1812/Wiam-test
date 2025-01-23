@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: #4CAF50;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: black;
+  outline: none;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px; 
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  background-size: 15px; 
+  appearance: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.select-style:focus {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(72, 233, 92, 0.5);
+  outline: none;
+}
+
+
+.input-box {
+  margin-bottom: 12px;
+}
+
+.input-range {
+  -webkit-appearance: none; /* Убираем стандартное оформление в WebKit браузерах */
+  width: 100%; /* Ширина ползунка */
+  height: 10px; /* Высота трека */
+  cursor: pointer; /* Курсор при наведении */
+}
+
+.input-range::-webkit-slider-runnable-track {
+  background: #ddd; /* Цвет трека */
+  border-radius: 5px; /* Скругление углов трека */
+}
+
+.input-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Убираем стандартное оформление */
+  width: 20px; /* Ширина ползунка */
+  height: 20px; /* Высота ползунка */
+  background: #4CAF50; /* Цвет ползунка */
+  border-radius: 50%; /* Скругление углов ползунка */
+  cursor: pointer; /* Курсор при наведении */
+  margin-top: -5px; /* Устраняем эффект смещения по вертикали */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Небольшая тень для эффекта глубины */
+}
+
+.input-range::-moz-range-track {
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.input-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Поддержка IE */
+.input-range::-ms-track {
+  width: 100%;
+  height: 10px;
+  background: transparent; /* Убираем фоновый цвет */
+  border-width: 6px 0; /* Установка границ трека */
+  color: transparent; /* Убираем цвет */
+}
+
+.input-range::-ms-fill-lower {
+  background: #ddd; /* Цвет нижней части трека */
+  border-radius: 5px;
+}
+
+.input-range::-ms-fill-upper {
+  background: #ddd; /* Цвет верхней части трека */
+  border-radius: 5px;
+}
+
+.input-range::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.input-range:focus {
+  outline: none; /* Убираем стандартный контур при фокусе */
+}
